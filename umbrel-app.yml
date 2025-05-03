@@ -1,0 +1,8 @@
+version: 1.0
+name: WinBrel
+description: Windows in Umbrel
+releaseNotes: First Version
+developer: uwu
+repository: https://github.com/hhddhdi/winUmbrel
+website: https://github.com/hhddhdi/winUmbrel
+port: 8006
