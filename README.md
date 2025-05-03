@@ -90,7 +90,9 @@
        stop_grace_period: 2m
    ```
 
-4. **Instale/Atualize o Docker** (caso necessário):
+⚠️ Adicione os valores removendo as chaves {}, ex: DISK_SIZE: 256GB
+
+4. **Instale/Atualize o Docker**:
 
    ```bash
    sudo apt-get remove -y docker docker-engine docker.io containerd runc
@@ -107,29 +109,10 @@
 
 6. **🎉 Acesse!**
 
-   * Painel: `http://<SEU_IP>:8006`
+   * Painel: `umbrel.local:8006`
    * Conexão RDP: `mstsc /v:<SEU_IP>` (porta 3389)
 
----
 
-## 💡 Dicas & Troubleshooting
-
-* **Verifique dispositivos**:
-
-  ```bash
-  lsmod | grep kvm
-  ls /dev/net/tun
-  ```
-* **Logs do container**:
-
-  ```bash
-  sudo docker logs -f windows-vm
-  ```
-* **Reiniciar container**:
-
-  ```bash
-  sudo docker-compose restart windows-vm
-  ```
 
 ---
 
